@@ -1,4 +1,9 @@
-# Which Distro To Use
+# Potato Recipes
+
+* Installing the right version of Linux (This Readme)
+* [Manipulating GPIOs](https://github.com/klavins/potato-recipies/tree/main/gpio)
+
+## Which Distro To Use
 
 For our purposes, we need a Linux Kernel that was built for the Potato and that was compiled with Device Tree Support. The only one I've found that works is the [Ubuntu 20.04 Distro](https://distro.libre.computer/ci/ubuntu/22.04/) by Libre. I tried the "server" distro, but for some reason the cloud-init step didn't work. So then I tried the Desktop Server:
 
@@ -14,7 +19,7 @@ ls /sys/kernel/config/
 
 which includes a directory called `device-tree`. Awesome.
 
-# Don't Use the Desktop
+## Don't Use the Desktop
 
 The first time you log in, you'll get the Ubuntu GUI Desktop thing. The itty bitty Potato can't handle all its compute requirements. So the first theng to do after you make an account is open a terminal, and type
 
@@ -28,7 +33,7 @@ We want to make this permanent, so that every time we boot we go to the console.
 ```bash
 sudo systemctl set-default multi-user.target
 ```
-# SSH
+## SSH
 
 I like to ssh into the potato so I don't need to plug in the monitor and keyboard all the time. And I can use my laptop which is way more convenient. To do this, do:
 
@@ -52,7 +57,7 @@ ssh username@192168.86.26
 I like to open several sessions. One for editing files, one for running commands, and one for looking around. 
 
 
-# How to Get i2c Working
+## How to Get i2c Working
 
 The Potato has two i2c channels. One is called i2c-ao and is on pins 3 and 5. The other is called i2c-b, and is on pins 27 and 28. By default, these are not exposed to Linux. You can see that if you do
 
@@ -91,7 +96,7 @@ The i2c channels 1 and 2 are the two Potato i2c channels!
 
 ***TODO***: With this setup you need to rerun the `sudo ./overlay.sh add` commands ever time you reboot. But there is certainly a way to configure that to happen on reboot. 
 
-# Showing Attached I2C Devices
+## Showing Attached I2C Devices
 
 First, attach one or more i2C devices:
 ```bash
