@@ -3,6 +3,8 @@
 * Installing the right version of Linux (This Readme)
 * [Manipulating GPIOs](https://github.com/klavins/potato-recipies/tree/main/gpio)
 
+# Installing Linux
+
 ## Which Distro To Use
 
 For our purposes, we need a Linux Kernel that was built for the Potato and that was compiled with Device Tree Support. The only one I've found that works is the [Ubuntu 20.04 Distro](https://distro.libre.computer/ci/ubuntu/22.04/) by Libre. I tried the "server" distro, but for some reason the cloud-init step didn't work. So then I tried the Desktop Server:
