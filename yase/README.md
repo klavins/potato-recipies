@@ -1,6 +1,6 @@
 # Yase on Le Potato
 
-Note: Yase works on Libre's Armbian distribution. I haven't gotten it to work on the Ubuntu distribution (yet). 
+Note: Somehow the sound coming from the stero headphone jack is linked to the HDMI driver. So if you log in using using the default console (not just ssh) with a keyboard, then sound will work. But if you are not only logged in through ssh, then you won't get any sound. What I have been doing is logging in with the keyboard and a monitor, and then unplugging the keyboard and monitor (for convenience), and running yase through ssh. 
 
 First, install some prerequisites:
 
