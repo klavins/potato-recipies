@@ -77,7 +77,7 @@ cd libretech-overlays
 make
 cp -r libretech-overlays/*.dtbo /lib/firmware
 sudo ./overlay.sh add libretech-cc-i2c-ao
-sudo overlay.sh add libretech-cc-i2c-b
+sudo ./overlay.sh add libretech-cc-i2c-b
 ```
 
 Now if you look in `/dev` you will see `/dev/i2c-0`,  `/dev/i2c-1`, and  `/dev/i2c-2`. You can see what these devices are with
