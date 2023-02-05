@@ -1,7 +1,9 @@
 # Potato Recipes
 
 * Installing the right version of Linux (This Readme)
+* [Installing Yase](https://github.com/klavins/potato-recipies/tree/main/yase)
 * [Manipulating GPIOs](https://github.com/klavins/potato-recipies/tree/main/gpio)
+* [Using i2c with Adafruit's Rotary Encoders](https://github.com/klavins/potato-recipies/tree/main/adafruit-rotary)
 
 # Installing Linux
 
