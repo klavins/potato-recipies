@@ -1,5 +1,7 @@
 # Yase on Le Potato
 
+Note: Yase works on Libre's Armbian distribution. I haven't gotten it to work on the Ubuntu distribution (yet). 
+
 First, install some prerequisites:
 
 ```bash
