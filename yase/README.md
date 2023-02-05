@@ -25,9 +25,12 @@ Finally, compile yase, and run an example.
 ```bash
 cd yase
 cd potato
-mkdir build
 make
 cd BigSound
 make
 ./bin/big_sound
 ```
+
+Note that I recently updated yase/potato so that:
+- The Makefile makes the directories build and lib
+- The example Makefiles point to `../potato_defs.mk` instead of `../defs.mk`.
