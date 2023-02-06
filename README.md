@@ -10,7 +10,7 @@
 
 ## Which Distro To Use
 
-For our purposes, we need a Linux Kernel that was built for the Potato and that was compiled with Device Tree Support. The only one I've found that works is the [Ubuntu 20.04 Distro](https://distro.libre.computer/ci/ubuntu/22.04/) by Libre. I tried the "server" distro, but for some reason the cloud-init step didn't work. So then I tried the Desktop Server:
+For our purposes, we need a Linux Kernel that was built for the Potato and that was compiled with Device Tree Support. The only one I've found that works is the [Ubuntu 22.04 Distro](https://distro.libre.computer/ci/ubuntu/22.04/) by Libre. I tried the "server" distro, but for some reason the cloud-init step didn't work. So then I tried the Desktop Server:
 
 > [ubuntu-22.04.1-preinstalled-desktop-arm64+aml-s905x-cc.img.xz](https://distro.libre.computer/ci/ubuntu/22.04/ubuntu-22.04.1-preinstalled-desktop-arm64%2Baml-s905x-cc.img.xz)
 
@@ -23,6 +23,10 @@ ls /sys/kernel/config/
 ```
 
 which includes a directory called `device-tree`. Awesome.
+
+[TODO: Try the base server and add only the apt packages we need.]
+
+[TODO: Build our own distro.]
 
 ## Don't Use the Desktop
 
