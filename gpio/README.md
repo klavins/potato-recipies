@@ -1,5 +1,7 @@
 # GPIOs
 
+> NOTE: Very Little of this is Potato Specific. It's all just Linux unless otherwise noted. 
+
 GPIOs on Le Potato are accessible through two `/dev` entries:
 
 ```txt

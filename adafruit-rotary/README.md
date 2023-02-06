@@ -1,5 +1,7 @@
 # Getting Adafruit's Stemma Qt Rotary Encoders
 
+> NOTE: Very little of this is Potato Specific. It's all just Linux. 
+
 To make sure i2c is working, I connected one of Adafruit's Stemma Qt Rotary Encoders to pins 3 and 5 on the Potato. That's not enought to get them to work though. These little boards use the Seesaw chip, which is programmed to send and receive specific commands over i2c. We can use Adafruit's Circuit Python to interact with the encoder. The file `rotary.py` in this directory shows how.
 
 Before it can be used, we need to install some tools:
