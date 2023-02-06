@@ -36,3 +36,5 @@ make
 Note that I recently updated yase/potato so that:
 - The Makefile makes the directories build and lib
 - The example Makefiles point to `../potato_defs.mk` instead of `../defs.mk`.
+
+NOTE: On my Potato, I only get sound from the headphone jack if I am logged into the console (not via ssh). Although you can log in, disconnect the HDMI and keyboard, and then use yase from ssh to hear sound from the jack. 
