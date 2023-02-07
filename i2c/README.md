@@ -52,7 +52,7 @@ Many i2c *device drivers* essentially just set and read from registers. In fact,
 As there may be dozens of such registers, each with its own semantics, it is nice to have a device driver to keep track of things. Most distributions of Linux ship with an enormous list of device drivers. On Le Potato, you can see a list of those involved in sound with:
 
 ```bash
-ls /lib/modules/6.0.19*/kernel/sound/soc/codecs/
+ls /lib/modules/6.0.12*/kernel/sound/soc/codecs/
 ```
 
 In fact, there is one called `snd-soc-pcm186x-i2c`, which is for the PCM1863. 
