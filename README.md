@@ -82,7 +82,7 @@ Do add the other two, we can use the [recipe](https://github.com/libre-computer-
 git clone https://github.com/libre-computer-project/libretech-overlays.git
 cd libretech-overlays
 make
-cp -r libretech-overlays/*.dtbo /lib/firmware
+sudo cp -r overlays/*.dtbo /lib/firmware
 sudo ./overlay.sh add libretech-cc-i2c-ao
 sudo ./overlay.sh add libretech-cc-i2c-b
 ```
