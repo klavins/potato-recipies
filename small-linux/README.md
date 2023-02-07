@@ -3,7 +3,7 @@ A Smaller Linux Distribution
 
 ***NOTE: This doesn't work yet. I can't get sound out of the Potato. I don't quite understand how to install and activate all the sound drivers.***
 
-The desktop distribution described in the main README is huge and has way more than we need. The base on the other hand is amll, but has hardliy anything. So here's a way to add to the base only what we need.
+The desktop distribution described in the main README is huge and has way more than we need. The base on the other hand is small, but has hardliy anything in it. So here's a way to add to the base only what we need.
 
 Get the Base Distribution
 ---
