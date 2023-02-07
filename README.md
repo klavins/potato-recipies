@@ -79,7 +79,7 @@ which will only show `i2c-0`, which I believe is for the HDMI port.
 Do add the other two, we can use the [recipe](https://github.com/libre-computer-project/libretech-overlays) from LibreTech as follows:
 
 ```bash
-sudo git https://github.com/libre-computer-project/libretech-overlays.git
+git clone https://github.com/libre-computer-project/libretech-overlays.git
 cd libretech-overlays
 make
 cp -r libretech-overlays/*.dtbo /lib/firmware
