@@ -8,21 +8,23 @@ apt install -y nano \
                libfftw3-dev libasound2-dev \
                libi2c-dev \
                python3-pip \
+               alsa-base \
+               alsa-tools \
+               pulseaudio 
 
-# SOUND TOOLS
+# START PULSE AUDIO (For now this will need to be done every time you boot up)
 
-apt install -y  alsa-base \
-                alsa-tools \
-                pulseaudio 
-                
 pulseaudio --start 
 
-# INSTALL I2C OVERLAYS
+# GET I2C OVERLAYS
 
 git clone https://github.com/libre-computer-project/libretech-overlays.git
 cd libretech-overlays
 make
 cp -r overlays/*.dtbo /lib/firmware
+
+# INSTALL OVERLAYS (For now this will need to be done every time you boot up)
+
 ./overlay.sh add libretech-cc-i2c-ao
 ./overlay.sh add libretech-cc-i2c-b
 cd ~

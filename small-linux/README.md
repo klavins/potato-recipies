@@ -60,3 +60,12 @@ and do
 ```bash
 service ssh restart
 ```
+
+Issues
+===
+
+- When I boot up, I need to not have the USB keyboard attached. When the boot is finished, I plug in the keyboard. It works, but I get an error
+```bash
+hub_ext_port_status failed (err = -71)
+usb 1-1.3: Failed to suspend device, error -71
+```
