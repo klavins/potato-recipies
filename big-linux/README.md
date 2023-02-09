@@ -42,7 +42,7 @@ Which installs and enables ssh. You an check your IP address with
 hostname -I
 ```
 
-For me this shows my potatos IP address on my local home network as 192.168.86.26. 
+For me this shows my Potato's IP address on my local home network as 192.168.86.26. 
 As long as your laptop is on the same network, you can ssh in with:
 
 ```bash
@@ -50,7 +50,6 @@ ssh username@192168.86.26
 ```
 
 I like to open several sessions. One for editing files, one for running commands, and one for looking around. 
-
 
 ## How to Get i2c Working
 

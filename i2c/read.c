@@ -45,7 +45,7 @@ int main(int argc, char * argv[]) {
   file = open(filename, O_RDWR);
   assert(file >= 0);
 
-  int addr = 0x4a;
+  int addr = 0x10; // change to your device address obtained from i2cdetect
   assert (ioctl(file, I2C_SLAVE, addr) >= 0);
 
   __s32 res;
